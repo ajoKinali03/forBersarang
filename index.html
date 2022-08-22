@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bersarang</title>
+</head>
+<body style="
+  margin: 0;
+  padding: 0;
+  background-color: rgb(63, 0, 136);
+  color: rgb(52, 171, 240);
+">
+  <div class="container" style="
+    height: 100vh;
+    font-size: 4vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  ">
+    <h1 style="
+      text-transform: uppercase;
+      margin: 0;
+      padding: 0;
+    ">bersarang</h1>
+    <p>latihan materi perulangan dan pecabangan</p>
+    <p>untuk melihat hasil:<br> klik kanan > pilih inspeksi element > console</p>
+  </div>
+  <script>
+
+    let empt = '';
+    let str = '*';
+    let spc = ' ';
+    let value = 35;
+    for(let a = 0; a < value; a++){
+      for(let b = value; a < b; b--){
+        empt += spc;
+      };
+      for( let c = 0; c <= a; c++ ){
+        empt += str;
+      };
+      for( let d = 0; d < a; d++ ){
+        empt += str;
+      };
+      empt += '\n';
+    };
+    for(let e = 0; e < value; e++){
+      for(let f = 0; f <= e; f++){
+        empt += spc;
+      };
+      for( let g = value; g > e; g-- ){
+        empt += str;
+      };
+      for( let h = (value - 1); h > e; h-- ){
+        empt += str;
+      };
+      empt += '\n';
+    };
+    console.log(empt);
+
+  </script>
+</body>
+</html>
