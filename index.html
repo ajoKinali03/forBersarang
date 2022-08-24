@@ -30,30 +30,68 @@
   </div>
   <script>
 
+    // ketupat
+    // let empt = '';
+    // let str = '*';
+    // let spc = ' ';
+    // let value = 15;
+    // for(let a = 0; a < value; a++){
+    //   for(let b = value; a < b; b--){
+    //     empt += spc;
+    //   };
+    //   for( let c = 0; c <= a; c++ ){
+    //     empt += str;
+    //   };
+    //   for( let d = 0; d < a; d++ ){
+    //     empt += str;
+    //   };
+    //   empt += '\n';
+    // };
+    // for(let e = 0; e < value; e++){
+    //   for(let f = 0; f <= e; f++){
+    //     empt += spc;
+    //   };
+    //   for( let g = value; g > e; g-- ){
+    //     empt += str;
+    //   };
+    //   for( let h = (value - 1); h > e; h-- ){
+    //     empt += str;
+    //   };
+    //   empt += '\n';
+    // };
+    // console.log(empt);
+
+    // butterfly
     let empt = '';
     let str = '*';
     let spc = ' ';
     let value = 15;
-    for(let a = 0; a < value; a++){
-      for(let b = value; a < b; b--){
-        empt += spc;
-      };
-      for( let c = 0; c <= a; c++ ){
+    for(let x = 0; x < value; x++){
+      for( let a = 0; a <= x; a++ ){
         empt += str;
       };
-      for( let d = 0; d < a; d++ ){
+      for(let b = value; x < b; b--){
+        empt += spc;
+      };
+      for(let c = value; x < c; c--){
+        empt += spc;
+      };
+      for( let d = 0; d <= x; d++ ){
         empt += str;
       };
       empt += '\n';
     };
-    for(let e = 0; e < value; e++){
-      for(let f = 0; f <= e; f++){
-        empt += spc;
-      };
-      for( let g = value; g > e; g-- ){
+    for(let y = 0; y < value; y++){
+      for( let a = value; a > y; a-- ){
         empt += str;
       };
-      for( let h = (value - 1); h > e; h-- ){
+      for(let b = 0; b <= y; b++){
+        empt += spc;
+      };
+      for(let c = 0; c <= y; c++){
+        empt += spc;
+      };
+      for( let d = value; d > y; d-- ){
         empt += str;
       };
       empt += '\n';
